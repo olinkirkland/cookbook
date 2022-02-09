@@ -7,7 +7,7 @@
 #categorieCountries{
     background-image: url('data/imgCategories/globe.jpg');
 }
-#categorieTopTen{
+#categorieTopHoundred{
     background-image: url('data/imgCategories/ranking.jpg');
 }
 #categorieParties{
@@ -23,18 +23,118 @@
     background-image: url('data/imgCategories/healthy.jpg'); 
 }
 
-.categoriesImg{
-    height: 20rem;
+#categories{
+
+    text-align: center;
+
+    padding: 5rem 0; /*Padding top & bottom may be customized*/
+
+
+    background: linear-gradient(45deg, red, yellow);
+    background-size: 500%;
+    background-position: left ;
+
+    animation-name: bgAnimation;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes bgAnimation {
+    from{
+        background-position: left;
+    }
+    to{
+        background-position: right;
+    }
+}
+
+#categories > h2{
+
+    background: linear-gradient(45deg, transparent 50%, rgb(255, 255, 255) 50%);
+    -webkit-background-clip: text;
+    background-position: right;
+    background-size: 200%;
+    
+    color: transparent;
+    font-size: 3rem;
+    font-weight: bold;
+
+    animation-name: textAnimation;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+
+}
+
+@keyframes textAnimation {
+    from{
+        background-position: left;
+    }
+    to{
+        background-position: right;
+    }
+}
+
+#categoriesCards{
+
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1rem 0.5rem;
+
+    display: grid;
+
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    grid-gap: 0.5rem;
+    grid-row-gap: 1rem;
+
+}
+
+.categorie{
+
+    width: 20rem;
+    height: 15rem;
+
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+
+    border-radius: 0.25rem;
+
+    box-shadow: 10px 10px 25px rgb(12, 12, 12);
+
 }
 
-.categoriesImg > h3{
+.categorieDescription{
+    width: 100%;
+    height: 100%;
+    
+    color: transparent;
 
+    text-align: center;
+    padding: 1rem;
 
+    border-radius: 0.25rem;
+
+    transition: 0.25s;
 }
 
-#spacerDiv{
-    height: 3rem;
+.categorieDescription > p{
+    color: inherit;
+    font-weight: bold;
+}
+.categorieDescription > h3{
+    color: inherit;
+    font-weight: bold;
+}
+
+.categorieDescription:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.6);
+
+    cursor: pointer;
 }

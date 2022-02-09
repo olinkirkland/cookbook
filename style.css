@@ -28,15 +28,23 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    color: transparent;
+}
+
+.categoriesImg > h3:hover{
+    color: white;
+    background-color: rgba(49, 49, 49, 0.5);
 }
 
 .categoriesImg > h3{
-    color:rgb(255, 255, 255);
+    width: 100%;
+    transition: 500ms;
 }
 
 #spacerDiv{
     height: 3rem;
 }
 
-#containerCategories{
+#categoriesHeadline{
+    margin: 0 auto;
 }

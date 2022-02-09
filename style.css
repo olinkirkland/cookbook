@@ -132,21 +132,21 @@
     font-weight: bold;
 }
 
-.categorieDescriptionOverlay{
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-
-    position: relative;
-    z-index: 10;
-    top: -50%;
-}
-
 .categorieDescription:hover{
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.6);
 
     cursor: pointer;
+}
+
+.categorieDescriptionOverlay{
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -100%;
+
+    background-color: transparent;
 }
 
 #modalCategories{
@@ -186,4 +186,10 @@
     grid-template: repeat(4, 25%) / repeat(5, 20%);
     grid-gap: 1%;
 
+}
+
+.modalSecondaryCategories{
+    background-size: cover;
+    text-decoration-color: transparent;
+    border-radius: 0.5rem;
 }

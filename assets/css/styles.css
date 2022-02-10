@@ -15,6 +15,7 @@
     transition: font-size 1s;
     font-size: 0px;
     margin-bottom: 0px;
+    text-transform: uppercase;
 }
 
 .card:hover .growP{

@@ -47,7 +47,8 @@ const recipes = { recipe1: recipe1, recipe2: recipe2, recipe3: recipe3 };
 
 // Check the url
 const url = location.href;
-const q = url.populateRecipePage(q);
+const q = url.substring(url.indexOf("?") + 1);
+populateRecipePage(q);
 
 function populateRecipePage(recipeName) {
   if (recipes[recipeName]) {

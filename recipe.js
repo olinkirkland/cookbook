@@ -45,10 +45,15 @@ const recipe3 = {
 
 const recipes = { recipe1: recipe1, recipe2: recipe2, recipe3: recipe3 };
 
+populateRecipePage("");
+
 function populateRecipePage(recipeName) {
   if (recipes[recipeName]) {
     console.log("Recipe found!");
-    let recipe = recipes[recipeName];
+    const recipe = recipes[recipeName];
+
+    const recipeNameEl = document.getElementById("recipeName");
+    recipeNameEl.textContent = recipe.name;
 
     // Todo: Apply recipe to view
   } else {

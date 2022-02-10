@@ -16,11 +16,172 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Festive&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Title -->
     <title>Document</title>
   </head>
   <body>
     <!-- NAV -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container-fluid m-2">
+        <!-- Brand -->
+        <div class="me-4">
+          <a class="navbar-brand brand" href="#">Super Recipes</a>
+          <p class="navbar-text muted"><em>Only the best recipes</em></p>
+        </div>
+
+        <!-- Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsing Content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="w-100">
+            <!-- Search Bar and Button -->
+            <form class="w-100">
+              <div class="input-group mb-3">
+                <!-- Search Dropdown -->
+                <button
+                  class="btn btn-outline-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  In Featured Recipes
+                </button>
+                <ul class="dropdown-menu dropdown-menu">
+                  <li>
+                    <a class="dropdown-item active" href="#"
+                      >In Featured Recipes</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">In All Recipes</a></li>
+                  <li><a class="dropdown-item" href="#">In Easy Recipes</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">In Fitness Recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">In Fantasy Recipes</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">In Featured Articles</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">In All Articles</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">In Community Posts</a>
+                  </li>
+                </ul>
+
+                <!-- Search Field -->
+                <input type="text" class="form-control" />
+
+                <!-- Search Button -->
+                <button class="btn btn-outline-secondary" type="button">
+                  <i class="fas fa-search me-1"></i>
+                  <span>Search</span>
+                </button>
+
+                <!-- Join -->
+                <button class="btn btn-primary ms-2" type="button">
+                  <i class="fas fa-user me-1"></i>
+                  <span>Join the Community</span>
+                </button>
+              </div>
+            </form>
+
+            <!-- Nav Links -->
+            <ul class="navbar-nav me-auto gap-2">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Recipes
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Easy Recipes</a></li>
+                  <li><a class="dropdown-item" href="#">Fitness Recipes</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Seasonal Recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Fantasy Recipes</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Articles
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">All Articles</a></li>
+                  <li><a class="dropdown-item" href="#">Recent Articles</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Submit an Article</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <i class="fas fa-star navbar-text"></i>
+                <a class="nav-link" href="#">Saved Recipes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <!-- BANNER -->
 

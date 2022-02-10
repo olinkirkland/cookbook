@@ -41,7 +41,7 @@
         <!-- Brand -->
         <div class="me-4">
           <a class="navbar-brand brand" href="#">Super Recipes</a>
-          <p><em>Only the best recipes</em></p>
+          <p class="navbar-text muted"><em>Only the best recipes</em></p>
         </div>
 
         <!-- Toggle Button -->
@@ -102,14 +102,17 @@
                   <i class="fas fa-search me-1"></i>
                   <span>Search</span>
                 </button>
+
+                <!-- Join -->
+                <button class="btn btn-primary ms-2" type="button">
+                  <i class="fas fa-user me-1"></i>
+                  <span>Join the Community</span>
+                </button>
               </div>
             </form>
 
             <!-- Nav Links -->
             <ul class="navbar-nav me-auto gap-2">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -119,16 +122,19 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown link
+                  Recipes
                 </a>
                 <ul
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Easy Recipes</a></li>
+                  <li><a class="dropdown-item" href="#">Fitness Recipes</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Seasonal Recipes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Fantasy Recipes</a>
                   </li>
                 </ul>
               </li>
@@ -141,50 +147,35 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown link
+                  Articles
                 </a>
                 <ul
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">All Articles</a></li>
+                  <li><a class="dropdown-item" href="#">Recent Articles</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <hr class="dropdown-divider" />
                   </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown link
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Submit an Article</a>
                   </li>
                 </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Community</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <i class="fas fa-star navbar-text"></i>
+                <a class="nav-link" href="#">Saved Recipes</a>
               </li>
             </ul>
           </div>

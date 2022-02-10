@@ -10,7 +10,7 @@ function openModal(e){
     let link = "#"
     let imgSrc = "data/imgCategories/impress.jpg"
 
-    let tvArray = ["Vikings", "Harry Potter", "Star Wars", "Herr der Ringe", "Game of Thrones", "The Walking Dead", "Spiderman"];
+    let tvArray = ["Vikings", "Harry Potter", "Herr der Ringe", "Game of Thrones", "The Walking Dead", "Spiderman"];
     let seasonsArray = ["Frühling", "Ostern", "Sommer", "Herbst", "Winter", "Weihnachten"];
     let countriesArray = ["Deutschland", "Österreich", "Russland", "Amerika", "Spanien", "Mexiko", "Afrika", "Japan", "England"];
     let topHundredArray = ["Top 10", "Top 100", "Top 10 Deutschland", "Top 100 Deutschland"];
@@ -20,8 +20,12 @@ function openModal(e){
     let healthyArray = ["Diabetiker", "LowCarb", "LowFat", "Low Calories", "HighCarb", "HighProtein"];
     let dataArray = [tvArray, seasonsArray, countriesArray, topHundredArray, partiesArray, impressArray, wtfArray, healthyArray];
 
-    if(document.querySelector(`#${targetID}`)){
-        document.getElementById("modalCategories").style.display = "unset";
+    if(targetID != ""){
+        if(targetID != "categories"){
+            if(document.querySelector(`#${targetID}`)){
+                document.getElementById("modalCategories").style.display = "unset";
+            }
+        }
     }
 
     switch(targetID){

@@ -116,11 +116,12 @@
     color: transparent;
 
     text-align: center;
-    padding: 1rem;
+    padding: 1rem;    
+
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.6);
 
     border-radius: 0.25rem;
-
-    transition: 0.25s;
 }
 
 .categorieDescription > p{
@@ -132,13 +133,6 @@
     font-weight: bold;
 }
 
-.categorieDescription:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.6);
-
-    cursor: pointer;
-}
-
 .categorieDescriptionOverlay{
 
     width: 100%;
@@ -146,7 +140,62 @@
     position: relative;
     top: -100%;
 
-    background-color: transparent;
+    cursor: pointer;
+
+    transition: 0.25s;
+    
+    border-radius: 0.25rem; 
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+.categorieDescriptionOverlay:hover{
+
+    opacity: 0;
+
+}
+
+#overlay1{
+    
+    background-image: url('data/imgCategories/tv.jpg');
+
+}
+
+#overlay2{
+    
+    background-image: url('data/imgCategories/seasons.jpg');
+}
+
+#overlay3{
+    
+    background-image: url('data/imgCategories/globe.jpg');
+}
+
+#overlay4{
+    
+    background-image: url('data/imgCategories/ranking.jpg');
+}
+
+#overlay5{
+    
+    background-image: url('data/imgCategories/parties.jpg');
+}
+
+#overlay6{
+    
+    background-image: url('data/imgCategories/impress.jpg');
+}
+
+#overlay7{
+    
+    background-image: url('data/imgCategories/wtf.jpg');
+}
+
+#overlay8{
+    
+    background-image: url('data/imgCategories/healthy.jpg');
 }
 
 #modalCategories{

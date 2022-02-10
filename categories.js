@@ -1,6 +1,12 @@
-window.addEventListener('click', openModal);
-document.getElementById('modalCategories').onclick = function () {
+document.querySelector("#categories").addEventListener('click', openModal);
+document.querySelector('#modalCategories').onclick = function () {
     hideModal()
+}
+
+function hideModal(){
+
+    document.getElementById("modalCategories").style.display = "none";
+
 }
 
 function openModal(e){
@@ -27,6 +33,8 @@ function openModal(e){
             }
         }
     }
+
+    document.getElementById("modalCategoriesInnerGrid").innerHTML = "";
 
     switch(targetID){
         case "catergorieTv":

@@ -1,3 +1,27 @@
+@keyframes haukeGrowCard {
+    from {height: 250px;}
+    to {height: 200px;}
+}
+
+.card img{
+    transition: height 1s;
+}
+
+.card:hover img{
+    height: 200px;
+}
+
+.growP{
+    transition: font-size 1s;
+    font-size: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.card:hover .growP{
+    margin-bottom: 0px;
+    font-size: 20px;
+}
 /* * {
   background: #000 !important;
   color: #0f0 !important;

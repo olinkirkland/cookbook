@@ -45,12 +45,18 @@ const recipe3 = {
 
 const recipes = { recipe1: recipe1, recipe2: recipe2, recipe3: recipe3 };
 
-populateRecipePage("");
+// Check the url
+const url = location.href;
+const q = url.populateRecipePage(q);
 
 function populateRecipePage(recipeName) {
   if (recipes[recipeName]) {
     console.log("Recipe found!");
     const recipe = recipes[recipeName];
+
+    /**
+     * Update Recipe elements
+     */
 
     const recipeNameEl = document.getElementById("recipeName");
     recipeNameEl.textContent = recipe.name;

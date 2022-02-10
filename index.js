@@ -43,4 +43,15 @@ const recipe3 = {
   ],
 };
 
-const allRecipes = { recipe1: recipe1, recipe2: recipe2, recipe3: recipe3 };
+const recipes = { recipe1: recipe1, recipe2: recipe2, recipe3: recipe3 };
+
+function populateRecipePage(recipeName) {
+  if (recipes[recipeName]) {
+    console.log("Recipe found!");
+    let recipe = recipes[recipeName];
+
+    // Todo: Apply recipe to view
+  } else {
+    console.log(`Recipe ${recipeName} not found!`);
+  }
+}

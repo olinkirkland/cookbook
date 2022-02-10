@@ -1,0 +1,50 @@
+#catergorieTv{
+    background-image: url('data/imgCategories/tv.jpg');
+}
+#categorieSeasons{
+    background-image: url('data/imgCategories/seasons.jpg');
+}
+#categorieCountries{
+    background-image: url('data/imgCategories/globe.jpg');
+}
+#categorieTopTen{
+    background-image: url('data/imgCategories/ranking.jpg');
+}
+#categorieParties{
+    background-image: url('data/imgCategories/parties.jpg');
+}
+#categorieImpress{
+    background-image: url('data/imgCategories/impress.jpg');
+}
+#categorieWTF{
+    background-image: url('data/imgCategories/wtf.jpg');
+}
+#categorieHealthy{
+    background-image: url('data/imgCategories/healthy.jpg'); 
+}
+
+.categoriesImg{
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: transparent;
+}
+
+.categoriesImg > h3:hover{
+    color: white;
+    background-color: rgba(49, 49, 49, 0.5);
+}
+
+.categoriesImg > h3{
+    width: 100%;
+    transition: 500ms;
+}
+
+#spacerDiv{
+    height: 3rem;
+}
+
+#categoriesHeadline{
+    margin: 0 auto;
+}

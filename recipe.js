@@ -45,12 +45,19 @@ const recipe3 = {
 
 const recipes = { recipe1: recipe1, recipe2: recipe2, recipe3: recipe3 };
 
-// Check the url
+// Parse the query in the url
+// www.google.com?foo
+//    -> foo
+// www.google.com?bar#
+//    -> bar
 const url = location.href;
-const arr = url.match(/\?([a-z,-]+)/);
+const arr = url.match(/\?([a-z0-9,-]+)/);
+let query = "no-query-found";
 if (arr.length > 1) {
-  populateRecipePage(arr[1]);
+  query = arr[1];
 }
+
+populateRecipePage(query);
 
 function populateRecipePage(recipeName) {
   if (recipes[recipeName]) {

@@ -1,4 +1,4 @@
-const recipe1 = {
+const recipeProto1 = {
   name: "Boiled Goose",
   img: "assets/images/goose.jpg",
   steps: [
@@ -11,9 +11,23 @@ const recipe1 = {
       description: "Put the goose in your mouth and eat it",
     },
   ],
+  ingredients: [
+    {
+      name: "Goose",
+      amount: "1",
+    },
+    {
+      name: "pot",
+      amount: "A big",
+    },
+    {
+      name: "water",
+      amount: "Some",
+    },
+  ],
 };
 
-const recipe2 = {
+const recipeProto2 = {
   name: "Olin's Favorite Feast",
   img: "assets/images/goose.jpg",
   steps: [
@@ -26,19 +40,141 @@ const recipe2 = {
       description: "Bok bok I am chicken.",
     },
   ],
+  ingredients: [
+    {
+      name: "Goose",
+      amount: "1",
+    },
+    {
+      name: "pot",
+      amount: "A big",
+    },
+    {
+      name: "water",
+      amount: "Some",
+    },
+  ],
 };
 
-const recipe3 = {
-  name: "Boiled Goose",
+const recipe1 = {
+  name: "Scrambled Eggs",
   img: "assets/images/goose.jpg",
   steps: [
     {
-      title: "Step 1: Boil the goose!",
-      description: "Put the goose in a pot of hot water for 30 minutes",
+      title: "Step 1: Crack some eggs!",
+      description: "Crack the eggs into a bowl",
     },
     {
-      title: "Step 2: Eat the goose!",
-      description: "Put the goose in your mouth and eat it",
+      title: "Step 2: Add milk!",
+      description: "Add milk into the bowl",
+    },
+    {
+      title: "Step 3: Scramble the mixure!",
+      description: "Use the fork to scramble the egg/milk mixure",
+    },
+    {
+      title: "Step 4: Turn the stove on!",
+      description: "Turn the stovetop on",
+    },
+    {
+      title: "Step 5: Cook the egg/milk mixure!",
+      description: "Cook the egg/milk mixure in a pan on the stovetop",
+    },
+  ],
+  ingredients: [
+    {
+      name: "Pan",
+      amount: "1",
+    },
+    {
+      name: "Fork",
+      amount: "1",
+    },
+    {
+      name: "Stovetop",
+      amount: "1",
+    },
+    {
+      name: "Bowl",
+      amount: "1",
+    },
+    {
+      name: "Eggs",
+      amount: "2-3",
+    },
+    {
+      name: "milk",
+      amount: "1 Pinch",
+    },
+  ],
+};
+
+const recipe2 = {
+  name: "Raw Dragonfruit",
+  img: "assets/images/goose.jpg",
+  steps: [
+    {
+      title: "Step 1: Open dragonfruit!",
+      description: "Open the dragonfruit with a knife",
+    },
+    {
+      title: "Step 2: Consume!",
+      description: "Consume the dragonfruit",
+    },
+  ],
+  ingredients: [
+    {
+      name: "Human",
+      amount: "1",
+    },
+    {
+      name: "Dragonfruit",
+      amount: "1",
+    },
+    {
+      name: "Knife",
+      amount: "A",
+    },
+  ],
+};
+
+const recipe3 = {
+  name: "Fresh Pasta",
+  img: "assets/images/goose.jpg",
+  steps: [
+    {
+      title: "Step 1: Make dough!",
+      description: "Add flour, water & eggs",
+    },
+    {
+      title: "Step 2: Roll out the dough!",
+      description: "Roll the dough out with a rolling pin",
+    },
+    {
+      title: "Step 2: Put dough in noodle machine!",
+      description: "Put the dough in the noodle machine",
+    },
+  ],
+  ingredients: [
+    {
+      name: "Noodle Machine",
+      amount: "1",
+    },
+    {
+      name: "water",
+      amount: "1 cup",
+    },
+    {
+      name: "flour",
+      amount: "1 cup",
+    },
+    {
+      name: "eggs",
+      amount: "2",
+    },
+    {
+      name: "Rolling pin",
+      amount: "1",
     },
   ],
 };

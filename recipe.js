@@ -75,7 +75,10 @@ function populateRecipePage(recipeName) {
 
   document.querySelector("title").innerHTML = recipe.name;
   document.getElementById("recipeHeadline").innerHTML = recipe.name;
-  document.getElementById("recipeImg").src = recipe.img;
+
+  document.querySelectorAll(".recipe-img").forEach((el) => {
+    el.src = recipe.img;
+  });
 
   recipe.steps.forEach((step) => {
     let stepEl = document.createElement("li");

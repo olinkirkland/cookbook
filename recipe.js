@@ -33,7 +33,8 @@ const recipeProto2 = {
   steps: [
     {
       title: "Step 1: Cook the feast",
-      description: "Give me all the food though, make it exactly the way I want!",
+      description:
+        "Give me all the food though, make it exactly the way I want!",
     },
     {
       title: "Step 2: Prepare the chicken",
@@ -189,7 +190,7 @@ const recipes = { recipe1: recipe1, recipe2: recipe2, recipe3: recipe3 };
 const url = location.href;
 const arr = url.match(/\?([a-z0-9,-]+)/);
 let query = "no-query-found";
-if (arr.length > 1) {
+if (arr && arr.length > 1) {
   query = arr[1];
 }
 
@@ -212,10 +213,24 @@ function populateRecipePage(recipeName) {
   document.getElementById("recipeHeadline").innerHTML = recipe.name;
   document.getElementById("recipeImg").src = recipe.img;
 
-  for (let i = 0; i < recipe.steps.length; i++) {
-    document.getElementById("recipeStepsOl").innerHTML =
-      document.getElementById("recipeStepsOl").innerHTML +
-      `<li><div class="recipeStep" id="recipeStep${i}"><h3>${recipe.steps[i].title}</h3>
-        <p>${recipe.steps[i].description}</p></div></li>`;
-  }
+  recipe.steps.forEach((step) => {
+    let stepEl = document.createElement("li");
+    stepEl.classList.add("list-group-item");
+    let stepTitleEl = document.createElement("h3");
+    let stepDescriptionEl = document.createElement("p");
+
+    stepTitleEl.textContent = step.title;
+    stepDescriptionEl.textContent = step.description;
+
+    stepEl.appendChild(stepTitleEl);
+    stepEl.appendChild(stepDescriptionEl);
+
+    document.getElementById("recipeSteps").appendChild(stepEl);
+  });
+
+  // document.getElementById("recipeSteps").a =
+  //   document.getElementById("recipeStepsOl").innerHTML +
+  //   `<li><div class="recipeStep" id="recipeStep${i}"><h3>${recipe.steps[i].title}</h3>
+  //     <p>${recipe.steps[i].description}</p></div></li>`;
+  // }
 }

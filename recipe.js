@@ -80,20 +80,31 @@ function populateRecipePage(recipeName) {
     el.src = recipe.img;
   });
 
-  recipe.steps.forEach((step) => {
-    let stepEl = document.createElement("li");
-    stepEl.classList.add("list-group-item");
-    let stepTitleEl = document.createElement("h3");
-    let stepDescriptionEl = document.createElement("p");
+  if (recipe.steps) {
+    recipe.steps.forEach((step) => {
+      let stepEl = document.createElement("li");
+      stepEl.classList.add("list-group-item");
+      let stepTitleEl = document.createElement("h3");
+      let stepDescriptionEl = document.createElement("p");
 
-    stepTitleEl.textContent = step.title;
-    stepDescriptionEl.textContent = step.description;
+      stepTitleEl.textContent = step.title;
+      stepDescriptionEl.textContent = step.description;
 
-    stepEl.appendChild(stepTitleEl);
-    stepEl.appendChild(stepDescriptionEl);
+      stepEl.appendChild(stepTitleEl);
+      stepEl.appendChild(stepDescriptionEl);
 
-    document.getElementById("recipeSteps").appendChild(stepEl);
-  });
+      document.getElementById("recipeSteps").appendChild(stepEl);
+    });
+  }
+
+  if (recipe.ingredients) {
+    recipe.ingredients.forEach((ingredient) => {
+      let ingredientEl = document.createElement("li");
+      ingredientEl.classList.add("mx-2");
+      let ingredientQuantityEl = document.createElement("span");
+      let ingredientNameEl = document.createElement("span");
+    });
+  }
 
   // document.getElementById("recipeSteps").a =
   //   document.getElementById("recipeStepsOl").innerHTML +

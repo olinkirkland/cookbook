@@ -79,6 +79,7 @@ function populateRecipePage(recipeName) {
 
   recipe.steps.forEach((step) => {
     let stepEl = document.createElement("li");
+    stepEl.classList.add("list-group-item");
     let stepTitleEl = document.createElement("h3");
     let stepDescriptionEl = document.createElement("p");
 

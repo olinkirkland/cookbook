@@ -184,17 +184,67 @@
     </nav>
 
     <!-- RECIPE HEADER -->
-
-    <h2 id="recipeHeadline"></h2>
+    <h2 id="recipeHeadline" class="display-2 text-center my-5"></h2>
 
     <!-- RECIPE IMAGES -->
-    <img class="recipe-img" alt="Recipe Preview">
+    <!-- <img class="recipe-img" alt="Recipe Preview"> -->
+    <div class="row bg-secondary bg-gradient py-3 mx-0 px-0">
+
+      <h2 id="recipeHeadline" class="h2 text-center py-3"></h2>
+
+      <div class="col-lg-3 col-md-1 col-sm-0"></div>
+      <div class="col-lg-6 col-md-10 col-sm-12 rounded p-0 btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipeModal" style="overflow: hidden;">
+        <img class="recipe-img" style="width: 100%;" alt="Recipe Preview">
+      </div>
+      <div class="col-lg-3 col-md-1 col-sm-0"></div>
+    </div>
+
+    <div
+        class="modal fade w-100 h-100"
+        id="recipeModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-bodyc row text-center ms-2">
+              <img src="" class="recipe-Img col-11 p-2" alt="">
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     <!-- RECIPE BODY -->
-    <div id="recipeIngredients" class=""></div>
+    <h3 class="text-center mt-5">Ingredients</h3>
+    <div id="recipeIngredients" class="mt-3 mb-5 text-center">
+      <!-- Fill by JS -->
+    </div>
 
     <div id="recipeSteps" class="list-group col-lg-6 mx-auto mt-4 mb-4">
       <!-- Will be filled by JS -->
     </d>
+
+    
 
 
     <!-- SHARE -->

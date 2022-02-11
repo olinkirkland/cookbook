@@ -185,7 +185,8 @@ function populateRecipePage(recipeName) {
       ingredientAmountEl.classList.add("me-1");
       let ingredientNameEl = document.createElement("span");
 
-      ingredientAmountEl.textContent = ingredient.amount + ' ' + ingredient.name;
+      ingredientAmountEl.textContent =
+        ingredient.amount + " " + ingredient.name;
       // ingredientNameEl.textContent = ingredient.name;
 
       ingredientEl.appendChild(ingredientAmountEl);
